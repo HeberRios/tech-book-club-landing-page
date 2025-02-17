@@ -1,5 +1,6 @@
+import { Hero } from '../Hero/Hero';
 import { Logo } from '../icons/Logo';
-import './Header.css'
+import './Header.css';
 
 export function Header() {
   return (
@@ -7,6 +8,8 @@ export function Header() {
       <div className='container'>
         <Logo />
       </div>
+
+      <Hero />
     </header>
   );
 }
