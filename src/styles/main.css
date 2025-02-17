@@ -1,0 +1,139 @@
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/inter-v18-latin-regular.woff2') format('woff2');
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/inter-v18-latin-600.woff2') format('woff2');
+}
+
+/* martian-mono-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/martian-mono-v3-latin-regular.woff2')
+    format('woff2');
+}
+
+/* martian-mono-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/martian-mono-v3-latin-600.woff2') format('woff2');
+}
+
+/* martian-mono-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/martian-mono-v3-latin-700.woff2') format('woff2');
+}
+
+:root {
+  /* # Colors */
+
+  /* ## Neutral */
+  --clr-neutral-900: #062630;
+  --clr-neutral-700: #385159;
+  --clr-neutral-200: #e6e1df;
+  --clr-neutral-100: #faf5f3;
+  --clr-neutral-0: #ffffff;
+
+  /* ## Light salmon */
+  --clr-light-salmon-500: #fea36f;
+  --clr-light-salmon-100: #ffe2d1;
+  --clr-light-salmon-50: #fff5ef;
+
+  /* ## Gradient */
+  --clr-text-gradient: 107deg, #ff9a60 -11.37%, #062630 61.84%;
+  --clr-gradient: 90deg, #ffe2d1 0%, #fff5ef 100%;
+
+  /* # typography */
+
+  /* ## Font family */
+  --ff-headings: 'Martian Mono';
+  --ff-body-text: 'Inter';
+
+  /* ## Font Weight */
+
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+/* CSS RESET */
+/*
+	1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+	2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+	Typographic tweaks!
+	3. Add accessible line-height
+	4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+	5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+	6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+	7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+	8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
