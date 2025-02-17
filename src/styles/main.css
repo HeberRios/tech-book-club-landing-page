@@ -137,3 +137,10 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* GENERAL STYLES */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
