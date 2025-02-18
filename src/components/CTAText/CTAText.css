@@ -1,0 +1,26 @@
+.cta-text-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cta-text-container > img {
+  height: 2.5rem;
+}
+
+.cta-testimonials-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rating-stars-wrapper {
+  display: flex;
+}
+
+.cta-testimonials-text > p {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem;
+  font-family: 'Martian Mono';
+}

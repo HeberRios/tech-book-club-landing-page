@@ -1,5 +1,8 @@
 import { CTA } from '../CTA/CTA';
 import { CTAText } from '../CTAText/CTAText';
+import { ArrowDown } from '../icons/ArrowDown';
+import './Hero.css';
+import mobileHeroImg from '../../assets/images/image-hero-mobile.webp';
 
 export function Hero() {
   return (
@@ -11,12 +14,22 @@ export function Hero() {
           enthusiasts. Get curated recommendations, join vibrant discussions,
           and level up your skills one chapter at a time.
         </p>
+
+        <div className='hero-cta'>
+          <CTA icon={<ArrowDown />} parentComponent='hero' />
+          <CTAText parentComponent='hero' />
+        </div>
       </section>
 
-      <div className='hero-cta'>
-        <CTA />
-        <CTAText />
-      </div>
+      <picture>
+        <source media='(min-width: )' srcSet='' />
+
+        <img
+          className='hero-img'
+          src={mobileHeroImg}
+          alt='a group a people discussing the content of a book'
+        />
+      </picture>
     </div>
   );
 }

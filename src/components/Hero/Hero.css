@@ -1,0 +1,40 @@
+.hero-section {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-text-container > h1 {
+  font-family: 'Martian Mono';
+  font-size: 2.375rem;
+  letter-spacing: -0.125rem;
+  line-height: 1.2;
+  background: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text-container > p {
+  font-family: 'Inter';
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.0313rem;
+  color: #385159;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-img {
+  border-radius: 0.3175rem;
+}
