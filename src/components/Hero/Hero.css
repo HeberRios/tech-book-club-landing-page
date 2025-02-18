@@ -48,6 +48,22 @@
   }
 
   .hero-img {
+    max-width: 33.75rem;
     border-radius: 0.6519rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .header-container > .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 90rem) {
+  .header-container > .hero-section {
+    margin-top: 5rem;
+    column-gap: 4rem;
   }
 }

@@ -8,11 +8,26 @@
   background-position: 0% 0%, calc(-50% + 15.625rem) calc(100% + 31.25rem);
 }
 
+/* media queries */
+
 @media (min-width: 48rem) {
   .header-container {
     padding: 2rem;
     padding-bottom: 5rem;
     background-repeat: repeat, no-repeat;
     background-position: 0% 0%, calc(30% + 15.625rem) calc(100% + 31.25rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  .header-container {
+    background-position: 0% 0%, calc(30% + 650px) calc(100% + 31.25rem);
+  }
+}
+
+@media (min-width: 90rem) {
+  .header-container {
+    padding: 2rem 8.3125rem 5rem 8.3125rem;
+    background-position: 0% 0%, calc(80% + 40.625rem) calc(125% + 500px);
   }
 }
