@@ -1,4 +1,4 @@
-.hero-section {
+.header-container > .hero-section {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -7,12 +7,11 @@
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .hero-text-container > h1 {
   font-family: 'Martian Mono';
-  font-size: 2.375rem;
+  font-size: clamp(2.375rem, 8.125dvw, 3.875rem);
   letter-spacing: -0.125rem;
   line-height: 1.2;
   background: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
@@ -27,6 +26,7 @@
   line-height: 1.4;
   letter-spacing: -0.0313rem;
   color: #385159;
+  margin-bottom: 2rem;
 }
 
 .hero-cta {
@@ -36,5 +36,18 @@
 }
 
 .hero-img {
+  width: 100%;
   border-radius: 0.3175rem;
+}
+
+/* media queries */
+
+@media (min-width: 48rem) {
+  .header-container > .hero-section {
+    margin-top: 4rem;
+  }
+
+  .hero-img {
+    border-radius: 0.6519rem;
+  }
 }

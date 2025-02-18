@@ -6,7 +6,7 @@ import mobileHeroImg from '../../assets/images/image-hero-mobile.webp';
 
 export function Hero() {
   return (
-    <div className='hero-section'>
+    <div className='container hero-section'>
       <section className='hero-text-container'>
         <h1>Join the ultimate tech book club</h1>
         <p>
