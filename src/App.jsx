@@ -7,8 +7,10 @@ function App() {
     <>
       <Header />
       {/* TODO: change the source in the picture element inside the hero */}
-      <FeatureCard cardTopic='read-together' />
-      <FeatureCard cardTopic='not-average' />
+      <div className='features-section'>
+        <FeatureCard cardTopic='read-together' />
+        <FeatureCard cardTopic='not-average' />
+      </div>
     </>
   );
 }

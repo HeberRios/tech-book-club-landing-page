@@ -24,8 +24,6 @@ export function Hero() {
       </section>
 
       <picture>
-        {/* first the wider media query, to evaluate the condition and if is not true skip to the
-        next source */}
         <source media='(min-width: 90rem )' srcSet={desktopHeroImg} />
         <source media='(min-width: 48rem )' srcSet={tabletHeroImg} />
 

@@ -140,6 +140,10 @@ h6 {
 
 /* GENERAL STYLES */
 
+body {
+  font-family: var(--ff-body-text);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -151,4 +155,9 @@ h6 {
 
 .btn:hover {
   cursor: pointer;
+}
+
+/* features section */
+.features-section {
+  padding: 0 1rem;
 }
