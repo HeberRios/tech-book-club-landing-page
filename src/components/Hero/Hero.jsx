@@ -3,6 +3,8 @@ import { CTAText } from '../CTAText/CTAText';
 import { ArrowDown } from '../icons/ArrowDown';
 import './Hero.css';
 import mobileHeroImg from '../../assets/images/image-hero-mobile.webp';
+import tabletHeroImg from '../../assets/images/image-hero-tablet.webp';
+import desktopHeroImg from '../../assets/images/image-hero-desktop.webp';
 
 export function Hero() {
   return (
@@ -22,7 +24,10 @@ export function Hero() {
       </section>
 
       <picture>
-        <source media='(min-width: )' srcSet='' />
+        {/* first the wider media query, to evaluate the condition and if is not true skip to the
+        next source */}
+        <source media='(min-width: 90rem )' srcSet={desktopHeroImg} />
+        <source media='(min-width: 48rem )' srcSet={tabletHeroImg} />
 
         <img
           className='hero-img'
