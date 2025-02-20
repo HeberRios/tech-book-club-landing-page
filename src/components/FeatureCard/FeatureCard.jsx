@@ -12,13 +12,7 @@ import orangeOvalImage from '../../assets/images/pattern-circle.png';
 export function FeatureCard({ cardTopic }) {
   if (cardTopic === 'read-together') {
     return (
-      <div
-        className={`${
-          cardTopic === 'read-together'
-            ? 'container product-feature-card read-tgt'
-            : 'container product-feature-card'
-        }`}
-      >
+      <div className='container product-feature-card read-tgt'>
         <article className='feature-text-container'>
           <h2>Read together, grow together</h2>
           <ul>
@@ -62,13 +56,7 @@ export function FeatureCard({ cardTopic }) {
     );
   } else {
     return (
-      <div
-        className={`${
-          cardTopic === 'not-average'
-            ? 'container product-feature-card not-avg'
-            : 'container product-feature-card'
-        }`}
-      >
+      <div className='container product-feature-card'>
         <article className='feature-text-container'>
           <h2>
             <span className='before-text'>Not your average book</span>
