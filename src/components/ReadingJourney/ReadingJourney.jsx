@@ -1,4 +1,5 @@
 import arrowIcon from '../../assets/images/pattern-arrow.svg';
+import './ReadingJourney.css';
 
 export function ReadingJourney() {
   return (
