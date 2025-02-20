@@ -20,9 +20,30 @@
 .feature-text-container > h2 {
   font-family: var(--ff-headings);
   color: var(--clr-neutral-900);
-  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 7dvw, 3.125rem);
+  font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.125rem;
+}
+
+.highlighted-word {
+  position: relative;
+  display: inline-block;
+}
+
+/* this rule was useful as the separation between the highlighted word and
+the rest of the heading was broken, but wrapping the rest of the heading and givin it
+this after white space solve the issue! */
+.before-text::after {
+  content: '\00a0';
+}
+
+.highlight-oval {
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 1.175;
 }
 
 .feature-text-container > ul {

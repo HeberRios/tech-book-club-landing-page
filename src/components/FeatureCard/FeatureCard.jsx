@@ -1,8 +1,9 @@
+import './FeatureCard.css';
 import readTogetherMobileImg from '../../assets/images/image-read-together-mobile.webp';
 import notAverageMobileImg from '../../assets/images/image-not-average-mobile.webp';
 import techsLogosImage from '../../assets/images/logos-tech.svg';
-import './FeatureCard.css';
 import checkIcon from '../../assets/images/icon-check.svg';
+import orangeOvalImage from '../../assets/images/pattern-circle.png';
 
 export function FeatureCard({ cardTopic }) {
   if (cardTopic === 'read-together') {
@@ -64,7 +65,18 @@ export function FeatureCard({ cardTopic }) {
         }`}
       >
         <article className='feature-text-container'>
-          <h2>Not your average book club</h2>
+          <h2>
+            <span className='before-text'>Not your average book</span>
+            <span className='highlighted-word'>
+              {' '}
+              club
+              <img
+                className='highlight-oval'
+                src={orangeOvalImage}
+                alt='orange oval'
+              />
+            </span>
+          </h2>
           <p className='feature-text'>
             Connect with a community that speaks your language - from
             <strong> Python </strong>
