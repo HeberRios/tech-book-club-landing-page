@@ -3,18 +3,18 @@
 }
 
 .product-feature-card.read-tgt {
-  margin-top: 4rem;
+  width: 100%;
 }
 
-.product-feature-card.not-avg {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
 .feature-text-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+.product-feature-card.read-tgt > .feature-text-container > h2 {
+  text-wrap: balance;
 }
 
 .feature-text-container > h2 {
@@ -31,9 +31,6 @@
   display: inline-block;
 }
 
-/* this rule was useful as the separation between the highlighted word and
-the rest of the heading was broken, but wrapping the rest of the heading and givin it
-this after white space solve the issue! */
 .before-text::after {
   content: '\00a0';
 }
@@ -66,6 +63,7 @@ this after white space solve the issue! */
 }
 
 .feature-card-img {
+  width: 100%;
   border-radius: 0.7656rem;
 }
 
@@ -74,4 +72,16 @@ this after white space solve the issue! */
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (min-width: 48rem) {
+  .feature-text-container {
+    gap: 2.125rem;
+  }
+
+  .tech-logos {
+    display: block;
+    bottom: 3.1525rem;
+    right: 3.1525rem;
+  }
 }

@@ -156,8 +156,3 @@ body {
 .btn:hover {
   cursor: pointer;
 }
-
-/* features section */
-.features-section {
-  padding: 0 1rem;
-}

@@ -1,6 +1,8 @@
 import './FeatureCard.css';
 import readTogetherMobileImg from '../../assets/images/image-read-together-mobile.webp';
+import readTogetherTabletImg from '../../assets/images/image-read-together-tablet.webp';
 import notAverageMobileImg from '../../assets/images/image-not-average-mobile.webp';
+import notAverageTabletImg from '../../assets/images/image-not-average-tablet.webp';
 import techsLogosImage from '../../assets/images/logos-tech.svg';
 import checkIcon from '../../assets/images/icon-check.svg';
 import orangeOvalImage from '../../assets/images/pattern-circle.png';
@@ -46,7 +48,7 @@ export function FeatureCard({ cardTopic }) {
         </article>
 
         <picture>
-          <source media='(min-width: )' srcSet='' />
+          <source media='(min-width:48rem )' srcSet={readTogetherTabletImg} />
           <img
             className='feature-card-img'
             src={readTogetherMobileImg}
@@ -88,7 +90,7 @@ export function FeatureCard({ cardTopic }) {
         </article>
 
         <picture>
-          <source media='(min-width: )' srcSet='' />
+          <source media='(min-width:48rem )' srcSet={notAverageTabletImg} />
           <img
             className='feature-card-img'
             src={notAverageMobileImg}
