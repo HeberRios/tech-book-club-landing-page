@@ -1,5 +1,6 @@
-import { FeaturesSection } from './components/FeaturesSection/FeaturesSection';
 import { Header } from './components/header/Header';
+import { FeaturesSection } from './components/FeaturesSection/FeaturesSection';
+import { ReadingJourney } from './components/ReadingJourney/ReadingJourney';
 import './styles/main.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <FeaturesSection />
+      <ReadingJourney />
     </>
   );
 }
