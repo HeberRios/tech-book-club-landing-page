@@ -79,9 +79,43 @@
     gap: 2.125rem;
   }
 
+  .feature-text-container > ul {
+    gap: 1.5rem;
+  }
+
   .tech-logos {
     display: block;
     bottom: 3.1525rem;
     right: 3.1525rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .product-feature-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+    grid-template-areas: 'image text';
+  }
+
+  .product-feature-card.read-tgt > .feature-text-container {
+    grid-area: text;
+  }
+
+  .tech-logos {
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (min-width: 90rem) {
+  .product-feature-card {
+    column-gap: 5rem;
+  }
+
+  .tech-logos {
+    transform: translateX(66%);
   }
 }
