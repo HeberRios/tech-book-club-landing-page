@@ -1,5 +1,4 @@
-.cta-btn {
-  max-width: 23.75rem;
+.cta-primary-btn {
   display: flex;
   align-items: center;
   background-color: #faf5f3;
@@ -9,7 +8,11 @@
   border-radius: 0.5rem;
 }
 
-.cta-btn > span {
+.hero-cta-btn {
+  max-width: 23.75rem;
+}
+
+.cta-primary-btn > span {
   color: #062630;
   font-size: clamp(1rem, 2.5dvw, 1.125rem);
   font-weight: 600;

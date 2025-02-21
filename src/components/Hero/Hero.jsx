@@ -1,6 +1,5 @@
 import { CTA } from '../CTA/CTA';
 import { CTAText } from '../CTAText/CTAText';
-import { ArrowDown } from '../icons/ArrowDown';
 import './Hero.css';
 import mobileHeroImg from '../../assets/images/image-hero-mobile.webp';
 import tabletHeroImg from '../../assets/images/image-hero-tablet.webp';
@@ -18,7 +17,7 @@ export function Hero() {
         </p>
 
         <div className='hero-cta'>
-          <CTA icon={<ArrowDown />} parentComponent='hero' />
+          <CTA parentComponent='hero' />
           <CTAText parentComponent='hero' />
         </div>
       </section>
