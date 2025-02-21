@@ -17,7 +17,7 @@
 
 .reading-journey-container > h2 {
   font-family: var(--ff-headings);
-  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 6.6dvw, 3.125rem);
   line-height: 1.3;
   letter-spacing: -0.125rem;
   font-weight: 600;
@@ -39,7 +39,7 @@
 
 .journey-step > p {
   font-family: var(--ff-headings);
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.65dvw, 1.125rem);
   line-height: 1.3;
   letter-spacing: -0.0625rem;
   color: var(--clr-neutral-900);
@@ -58,4 +58,24 @@
 
 .icon-wrapper > img {
   display: none;
+}
+
+@media (min-width: 48rem) {
+  .reading-journey-section {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  .reading-journey-container {
+    gap: 3rem;
+    padding: 5rem 2rem;
+    background-position: 0% 0%, calc(55% + 18.75rem) calc(-160% - 18.75rem);
+  }
+
+  .reading-journey-container > ul {
+    gap: 2.5rem;
+  }
+
+  .journey-step {
+    gap: 1.5rem;
+  }
 }
