@@ -40,10 +40,6 @@ export function ReadingJourney() {
           <li className='journey-step'>
             <div className='icon-wrapper'>
               <span>4</span>
-              <img
-                src={arrowIcon}
-                alt='curved orange arrow facing right side'
-              />
             </div>
             <p>Attend exclusive meetups</p>
           </li>
