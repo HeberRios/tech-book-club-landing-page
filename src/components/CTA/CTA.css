@@ -12,6 +12,10 @@
   max-width: 23.75rem;
 }
 
+.membership-cta-btn {
+  justify-content: center;
+}
+
 .cta-primary-btn > span {
   color: #062630;
   font-size: clamp(1rem, 2.5dvw, 1.125rem);

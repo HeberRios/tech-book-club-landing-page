@@ -1,4 +1,5 @@
 import { MembershipCard } from '../MembershipCard/MembershipCard';
+import './MembershipOptions.css';
 
 export function MembershipOptions() {
   return (

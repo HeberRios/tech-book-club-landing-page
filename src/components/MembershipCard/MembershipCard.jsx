@@ -1,5 +1,6 @@
 import { CTA } from '../CTA/CTA';
 import checkBoxIcon from '../../assets/images/icon-check.svg';
+import './MembershipCard.css';
 
 export function MembershipCard({ membershipOption }) {
   if (membershipOption === 'starter') {
@@ -31,7 +32,7 @@ export function MembershipCard({ membershipOption }) {
     );
   } else if (membershipOption === 'pro') {
     return (
-      <div className='membership-card'>
+      <div className='membership-card highlighted-opt'>
         <div className='membership-text-container'>
           <h3>Pro</h3>
           <p>

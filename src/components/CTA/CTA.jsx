@@ -11,13 +11,13 @@ export function CTA({ parentComponent }) {
     );
   } else if (parentComponent === 'membership-enterprise') {
     return (
-      <button className='btn cta-primary-btn '>
+      <button className='btn cta-primary-btn membership-cta-btn '>
         <span>Talk to us</span>
       </button>
     );
   } else {
     return (
-      <button className='btn cta-primary-btn '>
+      <button className='btn cta-primary-btn membership-cta-btn '>
         <span>Subscribe now</span>
       </button>
     );
