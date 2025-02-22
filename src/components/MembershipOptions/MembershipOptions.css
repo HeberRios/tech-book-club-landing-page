@@ -1,8 +1,8 @@
 .memberships-section {
-  padding: 4rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 4rem 1rem 0 1rem;
 }
 
 .memberships-section > h2 {
@@ -16,5 +16,17 @@
 .membership-options-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .memberships-section {
+    padding: 5rem 2rem 0 2rem;
+    gap: 2.5rem;
+  }
+
+  .membership-options-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
