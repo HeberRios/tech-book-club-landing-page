@@ -1,10 +1,11 @@
+import './Testimonial.css';
 import { Star } from '../icons/Star';
 
 export function Testimonial() {
   return (
     <div className='testimonial-section'>
       <div className='testimonial-container'>
-        <div className='stars-wrapper'>
+        <div className='testimonial-stars-wrapper'>
           <Star />
           <Star />
           <Star />

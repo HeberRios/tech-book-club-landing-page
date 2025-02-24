@@ -1,0 +1,35 @@
+.testimonial-section {
+  padding: 4rem 1rem 0 1rem;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial-stars-wrapper {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.testimonial-text-container > blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--ff-headings);
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold);
+  line-height: 1.1;
+  letter-spacing: -0.0625rem;
+}
+
+.testimonial-text-container > blockquote > footer > cite {
+  font-family: var(--ff-body-text);
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.0313rem;
+  color: var(--clr-neutral-700);
+}
