@@ -1,5 +1,5 @@
 .testimonial-section {
-  padding: 4rem 1rem 0 1rem;
+  padding: 4rem 1rem 4rem 1rem;
 }
 
 .testimonial-container {
@@ -18,10 +18,15 @@
   flex-direction: column;
   gap: 2rem;
   font-family: var(--ff-headings);
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4.5dvw, 2.125rem);
   font-weight: var(--fw-semibold);
   line-height: 1.1;
   letter-spacing: -0.0625rem;
+  color: var(--clr-neutral-900);
+}
+
+.testimonial-text-container > blockquote > footer {
+  display: flex;
 }
 
 .testimonial-text-container > blockquote > footer > cite {
@@ -32,4 +37,14 @@
   line-height: 1.4;
   letter-spacing: -0.0313rem;
   color: var(--clr-neutral-700);
+}
+
+@media (min-width: 48rem) {
+  .testimonial-section {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+
+  .testimonial-text-container > blockquote {
+    line-height: 1.3;
+  }
 }
