@@ -81,6 +81,10 @@
 }
 
 @media (min-width: 64rem) {
+  .reading-journey-section {
+    padding: 7.5rem 2rem 0 2rem;
+  }
+
   .reading-journey-container {
     gap: 4rem;
     background-position: 0% 0%, calc(-50% + 18.75rem) calc(-40% - 18.75rem);
@@ -111,6 +115,9 @@
 }
 
 @media (min-width: 90rem) {
+  .reading-journey-section {
+    padding: 7.5rem 8.4375rem 0 8.4375rem;
+  }
   .reading-journey-container {
     background-position: 0% 0%, calc(100% + 31.25rem) calc(-40% - 21.875rem);
   }
