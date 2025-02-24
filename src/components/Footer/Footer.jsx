@@ -14,6 +14,7 @@ export function Footer() {
       </section>
 
       <div className='container copy-media-container'>
+        <div className='footer-separation-line'></div>
         <small>© 2024 - Tech Book Club</small>
         <ul className='media-links-list'>
           <li>
