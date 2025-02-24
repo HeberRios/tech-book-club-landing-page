@@ -3,6 +3,7 @@ import { FeaturesSection } from './components/FeaturesSection/FeaturesSection';
 import { ReadingJourney } from './components/ReadingJourney/ReadingJourney';
 import './styles/main.css';
 import { MembershipOptions } from './components/MembershipOptions/MembershipOptions';
+import { Testimonial } from './components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <FeaturesSection />
       <ReadingJourney />
       <MembershipOptions />
+      <Testimonial />
     </>
   );
 }
