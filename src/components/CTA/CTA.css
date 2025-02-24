@@ -12,6 +12,15 @@
   max-width: 23.75rem;
 }
 
+.footer-cta-btn {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.125rem var(--clr-neutral-0);
+}
+
+.cta-primary-btn.footer-cta-btn > span {
+  color: var(--clr-neutral-0);
+}
+
 .membership-cta-btn {
   justify-content: center;
 }

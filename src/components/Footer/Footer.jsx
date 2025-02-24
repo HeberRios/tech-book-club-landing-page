@@ -1,18 +1,19 @@
-import './Footer.css'
+import './Footer.css';
 import { CTA } from '../CTA/CTA';
 import { CTAText } from '../CTAText/CTAText';
 
 export function Footer() {
   return (
     <footer className='footer-section'>
-      <section>
+      <section className='footer-main-content'>
         <h2>Ready to debug your reading list?</h2>
         <div className='cta-container'>
           <CTA parentComponent='footer' />
           <CTAText parentComponent='footer' />
         </div>
       </section>
-      <div className='copy-media-container'>
+
+      <div className='container copy-media-container'>
         <small>© 2024 - Tech Book Club</small>
         <ul className='media-links-list'>
           <li>

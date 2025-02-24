@@ -18,7 +18,7 @@ export function Hero() {
 
         <div className='hero-cta'>
           <CTA parentComponent='hero' />
-          <CTAText parentComponent='hero' />
+          <CTAText />
         </div>
       </section>
 

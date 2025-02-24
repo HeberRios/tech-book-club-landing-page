@@ -6,6 +6,7 @@
     url('../../assets/images/pattern-glow.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: 0% 0%, calc(-50% + 15.625rem) calc(100% + 31.25rem);
+  color: var(--clr-neutral-700);
 }
 
 /* media queries */
