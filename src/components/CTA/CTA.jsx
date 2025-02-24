@@ -1,5 +1,6 @@
 import './CTA.css';
 import arrowDownIcon from '../../assets/images/icon-arrow-down.svg';
+import arrowUpIcon from '../../assets/images/icon-arrow-up.svg';
 
 export function CTA({ parentComponent }) {
   if (parentComponent === 'hero') {
@@ -7,6 +8,13 @@ export function CTA({ parentComponent }) {
       <button className='btn cta-primary-btn hero-cta-btn '>
         <span>Review membership options</span>
         <img src={arrowDownIcon} alt='dark green arrow facing down' />
+      </button>
+    );
+  } else if (parentComponent === 'footer') {
+    return (
+      <button className='btn cta-primary-btn footer-cta-btn '>
+        <span>Review membership options</span>
+        <img src={arrowUpIcon} alt='dark green arrow facing upwards' />
       </button>
     );
   } else if (parentComponent === 'membership-enterprise') {
