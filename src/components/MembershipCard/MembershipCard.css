@@ -75,3 +75,8 @@
   background-position: 22.5% 2.5%;
 }
 
+@media (min-width: 64rem) {
+  .membership-card.highlighted-opt {
+    padding: 2.5rem 1.5rem;
+  }
+}

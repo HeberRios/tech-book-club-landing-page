@@ -7,7 +7,7 @@
 
 .memberships-section > h2 {
   font-family: var(--ff-headings);
-  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 6.55dvw, 3.125rem);
   line-height: 1.3;
   letter-spacing: -0.125rem;
   color: var(--clr-neutral-900);
@@ -28,5 +28,29 @@
   .membership-options-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .memberships-section {
+    max-width: 60.625rem;
+    gap: 4rem;
+    margin: 0 auto;
+    padding: 7.5rem 0 0 0;
+  }
+
+  .memberships-section > h2 {
+    text-align: center;
+  }
+
+  .membership-options-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 90rem) {
+  .membership-options-wrapper {
+    grid-template-columns: 1fr 21.875rem 1fr;
   }
 }
