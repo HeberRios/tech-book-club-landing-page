@@ -35,3 +35,13 @@
   text-transform: uppercase;
   font-family: 'Martian Mono';
 }
+
+/* active states styles */
+
+.cta-primary-btn:hover {
+  background: linear-gradient(var(--clr-gradient));
+}
+
+.cta-primary-btn.footer-cta-btn:hover {
+  background: linear-gradient(var(--clr-dark-gradient));
+}

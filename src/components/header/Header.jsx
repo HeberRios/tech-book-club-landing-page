@@ -6,7 +6,9 @@ export function Header() {
   return (
     <header className='header-container'>
       <div className='container'>
-        <Logo />
+        <a href='#'>
+          <Logo />
+        </a>
       </div>
 
       <Hero />

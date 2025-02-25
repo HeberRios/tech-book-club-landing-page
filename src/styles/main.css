@@ -60,6 +60,7 @@
   /* ## Gradient */
   --clr-text-gradient: 107deg, #ff9a60 -11.37%, #062630 61.84%;
   --clr-gradient: 90deg, #ffe2d1 0%, #fff5ef 100%;
+  --clr-dark-gradient: 90deg, #385159 0%, #062630 100%;
 
   /* # typography */
 

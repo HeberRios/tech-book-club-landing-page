@@ -64,6 +64,10 @@
   list-style: none;
 }
 
+.media-link:hover > svg > path {
+  fill: var(--clr-neutral-700);
+}
+
 @media (min-width: 48rem) {
   .footer-section {
     padding: 4rem 2rem 0 2rem;
