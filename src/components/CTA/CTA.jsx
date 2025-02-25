@@ -3,16 +3,27 @@ import arrowDownIcon from '../../assets/images/icon-arrow-down.svg';
 import arrowUpIcon from '../../assets/images/icon-arrow-up.svg';
 
 export function CTA({ parentComponent }) {
+  function goToMemberships() {
+    const membershipsSection = document.getElementById('memberships');
+    membershipsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
   if (parentComponent === 'hero') {
     return (
-      <button className='btn cta-primary-btn hero-cta-btn '>
+      <button
+        className='btn cta-primary-btn hero-cta-btn '
+        onClick={goToMemberships}
+      >
         <span>Review membership options</span>
         <img src={arrowDownIcon} alt='dark green arrow facing down' />
       </button>
     );
   } else if (parentComponent === 'footer') {
     return (
-      <button className='btn cta-primary-btn footer-cta-btn '>
+      <button
+        className='btn cta-primary-btn footer-cta-btn '
+        onClick={goToMemberships}
+      >
         <span>Review membership options</span>
         <img src={arrowUpIcon} alt='dark green arrow facing upwards' />
       </button>
