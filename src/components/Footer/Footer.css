@@ -50,6 +50,9 @@
 }
 
 .copy-media-container > small {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem;
   font-family: var(--ff-headings);
 }
 
@@ -78,5 +81,27 @@
   .copy-media-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-section {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  .footer-main-content {
+    max-width: 47.0625rem;
+    align-self: center;
+  }
+
+  .footer-separation-line {
+    width: calc(100%);
+    transform: translateX(0rem);
+  }
+}
+
+@media (min-width: 90rem) {
+  .footer-section {
+    padding: 5rem 8.4375rem 0 8.4375rem;
   }
 }
