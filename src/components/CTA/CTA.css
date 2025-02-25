@@ -45,3 +45,17 @@
 .cta-primary-btn.footer-cta-btn:hover {
   background: linear-gradient(var(--clr-dark-gradient));
 }
+
+.cta-primary-btn:hover,
+.cta-primary-btn:focus {
+  background: linear-gradient(var(--clr-gradient));
+  outline: solid 0.125rem var(--clr-neutral-700);
+  outline-offset: 0.1875rem;
+}
+
+.cta-primary-btn.footer-cta-btn:hover,
+.cta-primary-btn.footer-cta-btn:focus {
+  background: linear-gradient(var(--clr-dark-gradient));
+  outline: 0.125rem solid var(--clr-neutral-200);
+  outline-offset: 0.1875rem;
+}
