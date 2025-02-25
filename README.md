@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- Desktop design ![](./src/assets/screenshots/screenshot-desktop.png)
+- Mobile design ![](./src/assets/screenshots/screenshot-mobile.png)
 
 ### Links
 
