@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- [Live Site](https://frabjous-paletas-02c837.netlify.app/)
 
 ## My process
 
